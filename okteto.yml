@@ -1,0 +1,12 @@
+name: nodejs-angular2
+image: okteto/node:10
+workdir: /app
+command:
+- bash
+environment:
+- MONGO_USERNAME=okteto
+- MONGO_DATABASE=okteto
+- MONGO_PASSWORD=okteto
+forward:
+  - 8080:8080
+  - 3001:3001
